@@ -1,0 +1,21 @@
+
+# Count values in rows in dataframe
+measure_1 = COUNT(df [var] )
+
+# Count values in rows in dataframe with filter
+measure_2 = CALCULATE(COUNT(df[var]),df[var1]="Text")
+
+# Count distinct values in rows
+measure_3 = DISTINCTCOUNT(df[var])
+
+# Count distinct values in rows with filter
+measure_4 = CALCULATE (DISTINCTCOUNT(df[var]),df[var1]="Text")
+
+# Count with filter 
+measure_5 = COUNTX (FILTER(df, df[var1]="Text"),df[var])
+
+# Count rows
+measure_6 = COUNTROWS(df)
+
+# Count blanks
+measure_7 = COUNTBLANK(df[var])
